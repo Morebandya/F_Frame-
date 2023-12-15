@@ -12,10 +12,8 @@ public class LoginPage {
 	public LoginPage(WebDriver ldriver)
 	
 	{
-	 
-		this.driver=ldriver;
-	 
-	 }
+	 this.driver=ldriver;
+	}
 	
 	@FindBy(name="username") WebElement uname;
  	
@@ -32,16 +30,12 @@ public class LoginPage {
 	} catch (InterruptedException e) {
 		
 	}
-
-	
-	   uname.sendKeys(usernameApplication);	
+       
+	    uname.sendKeys(usernameApplication);	
 	    pass.sendKeys(passwordApplication);
 	    
 	    loginButton.click();
-	    
-		
-	
-	}
+	 }
 
    }
 
