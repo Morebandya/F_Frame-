@@ -8,13 +8,16 @@ public class LoginPage {
 	
 	WebDriver driver;
 	
+	//this is new commit from Nilesh
 	public LoginPage(WebDriver ldriver)
 	
 	{
-	 this.driver=ldriver;
-	}
+	 
+		this.driver=ldriver;
+	 
+	 }
 	
-	@FindBy(name="username1") WebElement uname;
+	@FindBy(name="username") WebElement uname;
  	
 	@FindBy(name="password") WebElement pass;
 	
