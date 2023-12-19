@@ -30,6 +30,7 @@ public class BaseClass {
 	public ExtentTest logger; 
 	
 	
+	
 	@BeforeSuite
 	public void setUpSuit()
 	{
