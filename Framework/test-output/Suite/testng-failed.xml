@@ -10,6 +10,7 @@
           <include name="loginApp"/>
           <include name="setUpSuit"/>
           <include name="tearDown"/>
+          <include name="loginApp1"/>
         </methods>
       </class> <!-- com.learnautomation.testcases.LoginTestCRM -->
     </classes>

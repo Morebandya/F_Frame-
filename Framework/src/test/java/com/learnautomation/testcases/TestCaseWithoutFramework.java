@@ -1,13 +1,14 @@
-package com.learnautomation.testcases;
+  package com.learnautomation.testcases;
 
+import org.testng.annotations.Test;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.Test;
 
-public class TestCaseWithoutFramework {
+
+public class TestCaseWithoutFramework { 
 	
 	
   @Test
@@ -15,11 +16,12 @@ public class TestCaseWithoutFramework {
   
   System.setProperty("driver.chrome.driver","H:\\batch12\\All_drivers\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
   
-  //ChromeOption co = new ChromeOption();
-  
-  //co.addArguments("remote-allow-origin=*");
+  //ChromeOption co = new ChromeOption();   
+   //co.addArguments("remote-allow-origin=*");
   
   WebDriver driver = new ChromeDriver();
+  
+  driver.manage().window().maximize();
   
   driver.get("https://classic.freecrm.com/");
   

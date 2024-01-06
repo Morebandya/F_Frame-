@@ -19,7 +19,7 @@ public class LoginTestCRM extends BaseClass {
 		
 		logger.info("Initionalizing Application");
 		
-		loginPage.loginToCRM(excel.getStringData("Login",0, 0 ),excel.getStringData("Login", 0, 1));
+		loginPage.loginToCRM(excel.getStringData("Login", 0, 0 ),excel.getStringData("Login", 0, 1));
 		
 		logger.pass("Login successfully");
 	
