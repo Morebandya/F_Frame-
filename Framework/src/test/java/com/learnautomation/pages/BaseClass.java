@@ -10,6 +10,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -46,16 +47,15 @@ public class BaseClass {
 	   Reporter.log("Setup Done- Test Can be Started", true);
     }
 	
-    @Parameters({"Browser","URLTobeTested"})
-	
-    @BeforeClass
-	public void setup(String browser,String url)
+    @Parameters({"browser","urlToBeTested"})
+	@BeforeClass
+	public void setup(@Optional String browser,@Optional String url)
 	{
 		Reporter.log("Trying to start the browser and application ready ", true);
 		
-		//driver=BrowserFactory.startApplication(driver,config.getBrowser(),config.getStagingURL());
+		driver=BrowserFactory.startApplication(driver,config.getBrowser(),config.getStagingURL());
 		
-		driver=BrowserFactory.startApplication(driver, browser, url);
+	   // driver=BrowserFactory.startApplication( driver, browser, url);
 		
 		Reporter.log("Browser and Application are startup and running", true);
 	}

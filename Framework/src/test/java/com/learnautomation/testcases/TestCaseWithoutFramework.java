@@ -1,4 +1,4 @@
-  package com.learnautomation.testcases;
+package com.learnautomation.testcases;
 
 import org.testng.annotations.Test;
 import java.time.Duration;

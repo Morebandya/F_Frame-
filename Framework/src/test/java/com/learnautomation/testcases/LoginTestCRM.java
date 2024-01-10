@@ -7,7 +7,7 @@ import com.learnautomation.pages.BaseClass;
 import com.learnautomation.pages.LoginPage;
 
 public class LoginTestCRM extends BaseClass {
-	
+	 
 		
 	@Test(priority=1)
 	public void loginApp()
