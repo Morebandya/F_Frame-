@@ -31,9 +31,9 @@ public class BaseClass {
 	public ExtentTest logger; 
 	
 	
-	
+
 	@BeforeSuite
-	public void setUpSuit()
+	public void setUpSuite()
 	{
 		Reporter.log("Setup the reports and Test is getting ready",true);
 		
