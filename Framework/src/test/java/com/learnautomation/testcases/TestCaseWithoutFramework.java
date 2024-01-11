@@ -21,7 +21,7 @@ public class TestCaseWithoutFramework {
   
   WebDriver driver = new ChromeDriver();
   
-  driver.manage().window().maximize();
+  //driver.manage().window().maximize();
   
   driver.get("https://classic.freecrm.com/");
   

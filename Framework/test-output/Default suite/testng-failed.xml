@@ -6,9 +6,9 @@
       <class name="com.learnautomation.testcases.LoginTestCRM">
         <methods>
           <include name="setup"/>
+          <include name="setUpSuite"/>
           <include name="teardownMethod"/>
           <include name="loginApp"/>
-          <include name="setUpSuit"/>
           <include name="tearDown"/>
           <include name="loginApp1"/>
         </methods>
