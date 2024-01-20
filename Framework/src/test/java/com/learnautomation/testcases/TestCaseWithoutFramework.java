@@ -25,7 +25,7 @@ public class TestCaseWithoutFramework {
   
   driver.get("https://classic.freecrm.com/");
   
-  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
   
   driver.findElement(By.name("username")).sendKeys("nilesh123com");
    

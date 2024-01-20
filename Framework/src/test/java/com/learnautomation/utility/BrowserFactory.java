@@ -39,7 +39,7 @@ public abstract class BrowserFactory {
 		   System.out.println("We do not support this Browser");
 	   }
 
-	   driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+	   driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
 	   driver.manage().window().maximize();
 	   driver.get(appURL);
 	   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
